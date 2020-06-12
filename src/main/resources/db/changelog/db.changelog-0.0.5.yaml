@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: kpetersson
+      comment: "Adding food FK"
+      changes:
+        - addColumn:
+            tableName: person
+            columns:
+              - column:
+                  name: favorite_food
+                  type: int
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_person_food
+                    references: food(id)

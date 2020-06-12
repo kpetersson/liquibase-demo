@@ -1,0 +1,80 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: kpetersson
+      comment: "Inserting first persons"
+      changes:
+        - insert:
+            tableName: person
+            columns:
+              - column:
+                  name: firstname
+                  value: "Bob"
+              - column:
+                  name: state
+                  value: "CA"
+              - column:
+                  name: lastname
+                  value: "Smith"
+              - column:
+                  name: middlename
+                  value: "Jake"
+        - insert:
+            tableName: person
+            columns:
+              - column:
+                  name: firstname
+                  value: "Jon"
+              - column:
+                  name: state
+                  value: "NV"
+              - column:
+                  name: lastname
+                  value: "Doe"
+              - column:
+                  name: middlename
+                  value: "Kyle"
+  - changeSet:
+      id: 2
+      author: kpetersson
+      comment: "Adding PK to food"
+      changes:
+        - addColumn:
+            tableName: food
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+  - changeSet:
+      id: 3
+      author: kpetersson
+      comment: "Inserting first foods"
+      changes:
+        - insert:
+            tableName: food
+            columns:
+              - column:
+                  name: kcal
+                  value: 1450
+              - column:
+                  name: name
+                  value: "Pizza"
+              - column:
+                  name: eatable
+                  valueBoolean: "true"
+        - insert:
+            tableName: food
+            columns:
+              - column:
+                  name: kcal
+                  value: 640
+              - column:
+                  name: name
+                  value: "Burger"
+              - column:
+                  name: eatable
+                  valueBoolean: "true"
