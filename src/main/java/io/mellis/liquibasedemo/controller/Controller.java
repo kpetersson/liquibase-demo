@@ -1,4 +1,4 @@
-package io.mellis.liquidbasedemo.controller;
+package io.mellis.liquibasedemo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

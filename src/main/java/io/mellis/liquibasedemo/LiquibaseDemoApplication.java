@@ -1,13 +1,14 @@
-package io.mellis.liquidbasedemo;
+package io.mellis.liquibasedemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LiquidbaseDemoApplication {
+public class LiquibaseDemoApplication
+{
 
 	public static void main(String[] args) {
-		SpringApplication.run(LiquidbaseDemoApplication.class, args);
+		SpringApplication.run(LiquibaseDemoApplication.class, args);
 	}
 
 }

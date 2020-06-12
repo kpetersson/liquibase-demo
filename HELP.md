@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'io.mellis.liquidbase-demo' is invalid and this project uses 'io.mellis.liquidbasedemo' instead.
+* The original package name 'io.mellis.liquibase-demo' is invalid and this project uses 'io.mellis.liquibasedemo' instead.
 
 # Getting Started
 
