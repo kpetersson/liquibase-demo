@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: kpetersson
+      changes:
+        - createTable:
+            tableName: food
+            columns:
+              - column:
+                  name: kcal
+                  type: int
+              - column:
+                  name: eatable
+                  type: boolean
+  - changeSet:
+      id: 2
+      author: gabriel
+      changes:
+        - addColumn:
+            tableName: food
+            columns:
+              - column:
+                  name: name
+                  type: varchar(50)
+
